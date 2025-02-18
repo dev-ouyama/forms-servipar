@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrevista Auto Aplicada</title>
+
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-emerald-50 flex flex-col items-center">
+    <header class="w-full flex flex-col items-center">
+      <img
+        class="align-middle justify-center w-3xs m-20"
+        src="./assets/logo.png"
+        alt=""
+      />
+
+      <h1
+        class="text-3xl text-primary text-center uppercase pb-5 font-title font-bold"
+      >
+        Entrevista Auto Aplicada
+      </h1>
+    </header>
+    <main
+      class="bg-white mb-20 border-2 border-secondary rounded-xl block w-[80%] p-10"
+    >
+      <!-- PABLO, MUDAR  AQUI!-->
+      <form
+        action=""
+        method=""
+        class="flex flex-col gap-14 w-full border-b font-body border-gray-900/10 pb-10"
+      >
+        <div class="flex flex-col w-full">
+          <label for="nome" class="text-sm font-bold mb-2">Nome:</label>
+          <input
+            required
+            type="text"
+            id="nome"
+            class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+            placeholder="Fulano de Tal"
+          />
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row gap-y-5 gap-x-10 w-full md:w-auto"
+        >
+          <div class="flex flex-col w-full md:w-auto">
+            <label for="nasc" class="text-sm font-bold mb-2"
+              >Data de Nascimento:</label
+            >
+            <input
+              required
+              type="date"
+              id="nasc"
+              class="px-5 py-2 w-full md:w-auto bg-gray-100 rounded-md focus-within:outline-primary text-base font-body"
+            />
+          </div>
+
+          <div class="flex flex-col w-full md:w-auto">
+            <label for="civil" class="text-sm font-bold mb-2"
+              >Estado civil:</label
+            >
+            <select
+              required
+              name="civil"
+              id="civil"
+              placeholder="select"
+              class="px-5 py-[.6rem] bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+            >
+              <option selected>Selecione...</option>
+              <option>Solteiro(a)</option>
+              <option>Casado(a)</option>
+              <option>Divorciado(a)</option>
+              <option>Viúvo(a)</option>
+              <option>Separado(a) judicialmente</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-y-5 justify-between gap-x-10">
+          <div class="flex flex-col w-full">
+            <label for="rg" class="text-sm font-bold mb-2">RG:</label>
+            <input
+              required
+              type="text"
+              id="rg"
+              class="px-5 py-2 w-full bg-gray-100 rounded-md focus-within:outline-primary text-base font-body"
+            />
+          </div>
+
+          <div class="flex flex-col w-full">
+            <label for="cpf" class="text-sm font-bold mb-2">CPF:</label>
+            <input
+              required
+              type="text"
+              id="cpf"
+              class="px-5 py-2 w-full bg-gray-100 rounded-md focus-within:outline-primary text-base font-body"
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-y-5 justify-between gap-20">
+          <div class="flex w-auto gap-2 items-center">
+            <label for="temFilho" class="text-sm font-bold mr-2"
+              >Tem filhos?</label
+            >
+
+            <input
+              id="temFilho"
+              type="checkbox"
+              value=""
+              class="w-4 h-4 text-primary bg-gray-100 border-gray-300 rounded-sm focus:ring-primary focus:ring-2"
+            />
+          </div>
+
+          <div class="flex flex-col w-full">
+            <label for="filhos" class="text-sm font-bold mb-2"
+              >Se sim, quais são seus nomes e idades?</label
+            >
+            <input
+              type="text"
+              id="filhos"
+              class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+              placeholder="Beltrano: 14. Cicrano: 8. [...]"
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-y-5 justify-between gap-10">
+          <div class="flex flex-col w-full">
+            <label for="facebook" class="text-sm font-bold mb-2"
+              >Facebook:</label
+            >
+            <input
+              type="text"
+              id="facebook"
+              class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+              placeholder="facebook.com/fulanodetal"
+            />
+          </div>
+
+          <div class="flex flex-col w-full">
+            <label for="instagram" class="text-sm font-bold mb-2"
+              >Instagram:</label
+            >
+            <input
+              type="text"
+              id="instagram"
+              class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+              placeholder="instagram.com/fulanodetal"
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col w-full">
+          <label for="atividades" class="text-sm font-bold mb-2"
+            >Quais as atividades que desempenhou desde o início de sua vida
+            profissional? E quais as que gostaria de realizar atualmente?
+          </label>
+          <input
+            type="text"
+            id="atividades"
+            class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+            placeholder=""
+          />
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-between gap-x-20">
+          <div class="flex gap-2 flex-row items-center mr-2">
+            <label for="estuda" class="text-sm font-bold mb-2"
+              >Estuda atualmente?</label
+            >
+
+            <input
+              id="estuda"
+              type="checkbox"
+              value=""
+              class="w-4 h-4 text-primary bg-gray-100 border-gray-300 rounded-sm focus:ring-primary focus:ring-2"
+            />
+          </div>
+
+          <div class="flex flex-col w-full">
+            <label for="estudaMotivo" class="text-sm font-bold mb-2"
+              >Se não, qual o motivo?</label
+            >
+            <input
+              type="text"
+              id="estudaMotivo"
+              class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+              placeholder="Motivo"
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-y-5 justify-between gap-x-10">
+          <div class="flex flex-col w-full">
+            <label for="curso" class="text-sm font-bold mb-2">Curso</label>
+            <input
+              type="text"
+              id="curso"
+              class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+              placeholder=""
+            />
+          </div>
+
+          <div class="flex flex-col w-full">
+            <label for="semestre" class="text-sm font-bold mb-2"
+              >Semestre</label
+            >
+            <input
+              type="number"
+              id="semestre"
+              class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+              placeholder=""
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col w-full">
+          <label for="ultimoEmprego" class="text-sm font-bold mb-2">
+            Qual foi o seu último local onde você prestou serviço?
+          </label>
+          <div id="ultimoEmprego" class="flex flex-col gap-4">
+            <div class="flex items-center">
+              <input
+                type="text"
+                id="cargo"
+                class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+                placeholder="Cargo"
+              />
+            </div>
+
+            <div class="flex items-center">
+              <input
+                type="text"
+                id="periodo"
+                class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+                placeholder="Período"
+              />
+            </div>
+
+            <div class="flex items-center">
+              <input
+                type="text"
+                id="motivoSaida"
+                class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+                placeholder="Motivo da saída"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col w-full">
+          <label for="produtivo" class="text-sm font-bold mb-2"
+            >Você se considera mais produtivo em ambientes mais calmos ou
+            agitados?
+          </label>
+          <input
+            type="text"
+            id="produtivo"
+            class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+            placeholder=""
+          />
+        </div>
+
+        <div class="flex flex-col w-full">
+          <label for="agregar" class="text-sm font-bold mb-2">
+            O que pretende agregar com a sua prestação de serviço no seu
+            primeiro ano de contrato?
+          </label>
+          <input
+            type="text"
+            id="agregar"
+            class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+            placeholder=""
+          />
+        </div>
+
+        <h2 class="text-base font-bold">
+          Responda respectivamente os itens, apresentando a situação, a ação
+          tomada e o resultado obtido:
+        </h2>
+
+        <div class="flex flex-col w-full">
+          <label for="prazoOuQualidade" class="text-sm font-bold mb-2"
+            >Quando você nota que está com o prazo apertado para entregar o seu
+            serviço, prefere entregar na data certa, tendo em mente que não fez
+            o melhor, ou atrasar a entrega e melhorar a qualidade?
+          </label>
+          <input
+            type="text"
+            id="prazoOuQualidade"
+            class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+            placeholder=""
+          />
+        </div>
+
+        <div class="flex flex-col w-full">
+          <label for="prioridades" class="text-sm font-bold mb-2"
+            >Como você administra suas prioridades, quando está realizando
+            diferentes trabalhos com um tempo limitado? Como baseia a tomada de
+            decisão?
+          </label>
+          <input
+            type="text"
+            id="prioridades"
+            class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+            placeholder=""
+          />
+        </div>
+
+        <div class="flex flex-col w-full">
+          <label for="ajuda" class="text-sm font-bold mb-2"
+            >Como você age quando precisa de ajuda, mas você está envolvido com
+            as suas responsabilidades e tem trabalhos para entregar?
+          </label>
+          <input
+            type="text"
+            id="ajuda"
+            class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+            placeholder=""
+          />
+        </div>
+
+        <div class="flex flex-col w-full">
+          <label for="atitude" class="text-sm font-bold mb-2"
+            >Por qual motivo não gostou da atitude de alguém que contratou os
+            seus serviços e como lidou com a situação?
+          </label>
+          <input
+            type="text"
+            id="atitude"
+            class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+            placeholder=""
+          />
+        </div>
+
+        <div class="flex flex-col w-full">
+          <label for="pqContratar" class="text-sm font-bold mb-2">
+            Por que a nossa empresa deveria efetuar um contrato de prestação de
+            serviço com você?
+          </label>
+          <input
+            type="text"
+            id="pqContratar"
+            class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+            placeholder=""
+          />
+        </div>
+
+        <div class="flex flex-col w-full">
+          <label for="ultrapassou" class="text-sm font-bold mb-2">
+            Comente sobre um momento em que você superou as expectativas em
+            algum serviço realizado como você o fez.
+          </label>
+          <input
+            type="text"
+            id="ultrapassou"
+            class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+            placeholder=""
+          />
+        </div>
+
+        <div class="flex flex-col w-full">
+          <label for="projeto" class="text-sm font-bold mb-2">
+            Detalhe sobre um projeto que desenvolveu ou participou, e quais
+            foram os resultados obtidos.
+          </label>
+          <input
+            type="text"
+            id="projeto"
+            class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+            placeholder=""
+          />
+        </div>
+
+        <div class="flex flex-col w-full">
+          <label for="desafio" class="text-sm font-bold mb-2">
+            Como você lida com uma situação inesperada ou um desafio de última
+            hora?
+          </label>
+          <input
+            type="text"
+            id="desafio"
+            class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+            placeholder=""
+          />
+        </div>
+
+        <div class="flex flex-col w-full">
+          <label for="quatroAcoes" class="text-sm font-bold mb-2">
+            Me conta quatro ações que você executou nos últimos dois anos para
+            se desenvolver no trabalho e que melhorou os resultados onde você
+            estava prestando serviço?
+          </label>
+          <input
+            type="text"
+            id="quatroAcoes"
+            class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+            placeholder=""
+          />
+        </div>
+
+        <div class="flex flex-col w-full">
+          <label for="maiorConquista" class="text-sm font-bold mb-2">
+            Qual foi a maior conquista da sua carreira? Me explique o porquê.
+          </label>
+          <input
+            type="text"
+            id="maiorConquista"
+            class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+            placeholder=""
+          />
+        </div>
+
+        <div class="flex flex-col w-full">
+          <label for="superarMetas" class="text-sm font-bold mb-2">
+            Fale abertamente e detalhadamente sobre uma oportunidade que lhe
+            deram e você conseguiu superar os desafios. Conte como desenvolveu a
+            estratégia, quais foram os pontos mais importantes, como você agiu?
+          </label>
+          <input
+            type="text"
+            id="superarMetas"
+            class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+            placeholder=""
+          />
+        </div>
+
+        <div class="flex flex-col w-full">
+          <label for="comunicacao" class="text-sm font-bold mb-2"
+            >Qual maneira você acredita ser a melhor para se comunicar com as
+            pessoas da empresa?
+          </label>
+          <input
+            type="text"
+            id="superarMetas"
+            class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+            placeholder=""
+          />
+        </div>
+
+        <div class="flex flex-col w-full">
+          <label for="ensinar" class="text-sm font-bold mb-2">
+            Se eu lhe pedisse para me ensinar alguma coisa neste momento, o que
+            me ensinaria?
+          </label>
+          <input
+            type="text"
+            id="ensinar"
+            class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+            placeholder=""
+          />
+        </div>
+
+        <div class="flex flex-col w-full">
+          <label for="sucessoTrabalho" class="text-sm font-bold mb-2">
+            Quando é que você se sente bem-sucedido no trabalho?
+          </label>
+          <input
+            type="text"
+            id="sucessoTrabalho"
+            class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+            placeholder=""
+          />
+        </div>
+
+        <div class="flex flex-col w-full">
+          <label for="importanciaTrabalho" class="text-sm font-bold mb-2">
+            Você considera seu trabalho importante? Por quais motivos?
+          </label>
+          <input
+            type="text"
+            id="importanciaTrabalho"
+            class="px-5 py-2 w-full bg-gray-100 focus-within:outline-primary rounded-md text-base font-body"
+            placeholder=""
+          />
+        </div>
+
+        <div class="flex">
+          <div class="flex flex-col w-fit">
+            <label for="nasc" class="text-sm font-bold mb-2">Data</label>
+            <input
+              required
+              type="date"
+              id="nasc"
+              class="px-5 py-2 w-full bg-gray-100 rounded-md focus-within:outline-primary text-base font-body"
+            />
+          </div>
+        </div>
+
+        <button
+          type="button"
+          id="enviar"
+          class="bg-primary text-white px-6 py-3 rounded-md font-bold text-lg mt-6"
+        >
+          Enviar
+        </button>
+      </form>
+    </main>
+  </body>
+</html>
